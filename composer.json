@@ -14,7 +14,10 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "symfony/framework-bundle": "~2.1"
+        "symfony/framework-bundle": "~2.3"
+    },
+    "suggest": {
+        "kunstmaan/live-reload-bundle": ""
     },
     "autoload": {
         "psr-0": { "Rior\\Bundle\\GruntDistBundle": "" }
