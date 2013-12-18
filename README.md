@@ -15,9 +15,10 @@ I only tested on Symfony 2.3 and 2.4.
 Installation
 ------------
 
-If you are creating a new project I suggest you to use yeoman generator sf2 (https://github.com/diegomarangoni/generator-sf2).
+If you are creating a new project I suggest you to use yeoman generator SF2:
+https://github.com/diegomarangoni/generator-sf2
 
-To use with an existing project, you should add the package to your composer.json file:
+If you want to use with an existing project, first you must add the package to your composer.json file:
 
 ```json
 {
@@ -35,7 +36,7 @@ And then run:
 composer update
 ```
 
-You must enabled the bundle on your AppKernel.php:
+And finally, you must enabled the bundle on your AppKernel.php:
 
 ```php
 $bundles = array(
