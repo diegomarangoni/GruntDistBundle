@@ -23,7 +23,7 @@ To use with an existing project, you should add the package to your composer.jso
 {
     "require": {
     	...
-        "rior/grunt-dist-bundle": "1.0.*",
+        "rior/grunt-dist-bundle": "1.0.*@dev",
         ...
     }
 }
@@ -33,6 +33,16 @@ And then run:
 
 ```bash
 composer update
+```
+
+You must enabled the bundle on your AppKernel.php:
+
+```php
+$bundles = array(
+    ...
+    new Rior\Bundle\GruntDistBundle\RiorGruntDistBundle(),
+    ...
+);
 ```
 
 Contributing
