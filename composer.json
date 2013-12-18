@@ -1,0 +1,28 @@
+{
+    "name": "rior/grunt-dist-bundle",
+    "description": "Symfony2 integration with grunt distribution.",
+    "keywords": ["grunt", "dist", "template", "yeoman"],
+    "homepage": "https://github.com/diegomarangoni/GruntDistBundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Diego Marangoni",
+            "email": "diegomarangoni@me.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "symfony/framework-bundle": "~2.1"
+    },
+    "autoload": {
+        "psr-0": { "Rior\\Bundle\\GruntDistBundle": "" }
+    },
+    "target-dir": "Rior/Bundle/GruntDistBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

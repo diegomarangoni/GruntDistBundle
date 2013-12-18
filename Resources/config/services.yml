@@ -1,0 +1,10 @@
+parameters:
+    rior_grunt_dist.twig.loader.class: Rior\Bundle\GruntDistBundle\Extension\LoaderExtension
+
+services:
+    rior_grunt_dist.twig.loader:
+        class: %rior_grunt_dist.twig.loader.class%
+        arguments:
+            - %kernel.environment%
+            - %kernel.root_dir%
+        tags:  [ { name: twig.extension } ]
