@@ -46,6 +46,35 @@ $bundles = array(
 );
 ```
 
+Usage
+-----
+
+Now you can extend your templates to use main templates, like:
+
+```twig
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    <h1>Here comes your content</h1>
+
+{% endblock %}
+```
+
+*Note that I not using "::" before the template name, this is because views path already are on include path of Twig loader.*
+
+This is **wrong**:
+
+```twig
+{% extends '::base.html.twig' %}
+```
+
+This is **right**:
+
+```twig
+{% extends 'base.html.twig' %}
+```
+
 Contributing
 ------------
 
